@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guesser</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number Guesser</h1>
+      <div id="game">
+        <div class="difficulty">
+          <label>Difficulty</label>
+          <select id="difficulty-options">
+            <option value="easy">Easy</option>
+            <option value="hard">Hard</option>
+            <option value="challenging">Challenging</option>
+          </select>
+        </div>
+        <p>
+          Guess a number between <span class="min-num"></span> and
+          <span class="max-num"></span>
+        </p>
+        <div>
+          <span class="total-guesses">
+            <strong>Total Guesses: </strong
+            ><span class="total-guesses-number"></span>
+          </span>
+          <br />
+          <span class="remaining-guesses">
+            <strong>Remaining Guesses: </strong
+            ><span class="remaining-guesses-number"></span>
+          </span>
+        </div>
+        <input
+          type="number"
+          id="guess-input"
+          placeholder="Enter your guess..."
+        />
+        <div>
+          <input type="submit" value="Reset" id="reset-btn" />
+          <input type="submit" value="Submit" id="guess-btn" />
+        </div>
+        <p class="message"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
